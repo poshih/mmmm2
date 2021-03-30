@@ -23,7 +23,7 @@ RUN git clone https://github.com/ethereum-mining/ethminer.git; \
     cmake --build .; \
     make install;	
 
-RUN sudo apt install xserver-xorg-video-dummy
+#RUN sudo apt install xserver-xorg-video-dummy
 
 ADD xserver.sh /root/xserver.sh
 RUN chmod +x /root/xserver.sh
