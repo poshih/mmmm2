@@ -22,6 +22,8 @@ RUN git clone https://github.com/ethereum-mining/ethminer.git; \
     cmake .. -DETHASHCUDA=ON -DETHASHCL=OFF -DETHSTRATUM=ON; \
     cmake --build .; \
     make install;	
+
+RUN sudo apt install xserver-xorg-video-dummy
     
 ADD startup.sh /root/onstart.sh
 RUN chmod +x /root/onstart.sh
