@@ -14,7 +14,7 @@ RUN apt update \
      build-essential     
          
 # Git repo set up
-RUN git clone https://github.com/ethereum-mining/ethminer.git; \
+RUN git clone -b v0.19.0 https://github.com/ethereum-mining/ethminer.git; \
     cd ethminer; \
     git submodule update --init --recursive; \
     mkdir build; \
