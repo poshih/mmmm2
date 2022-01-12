@@ -15,7 +15,7 @@ DISPLAY=:0 nvidia-settings -a GPUMemoryTransferRateOffsetAllPerformanceLevels=16
 sudo nvidia-smi -pm 1
 sudo nvidia-smi -pl 120
 
-until ethminer --report-hashrate -U -P stratum1+tcp://0xd1d1419ede629923cce568b4040dde13c132acc1.docker_2@us2.ethermine.org:4444
+until ethminer --report-hashrate -U -P stratum1+tcp://0x6e8D42f653Cd04960f13C02eEE2A33338A28ab6a.docker_2@us2.ethermine.org:4444
 do 
 echo "ethminer crashed with exit code $?.  Respawning.." >&2
 sleep 2
