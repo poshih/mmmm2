@@ -1,4 +1,4 @@
-# Ethereum CUDA Miner 4
+# Ethereum CUDA Miner 5
 
 ### Docker container for Ethereum mining with CUDA.
 
